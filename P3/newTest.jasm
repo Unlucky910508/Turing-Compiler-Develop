@@ -1,0 +1,30 @@
+class newTest
+{
+field static int b = 1
+method public static void main(java.lang.String[])
+max_stack 15
+max_locals 15
+{
+L0:
+getstatic int newTest.b
+sipush 10
+isub
+ifeq L1
+iconst_0
+goto L2
+L1:
+iconst_1
+L2:
+ifne L3
+getstatic int newTest.b
+sipush 1
+iadd
+putstatic int newTest.b
+goto L0
+L3:
+getstatic java.io.PrintStream java.lang.System.out
+getstatic int newTest.b
+invokevirtual void java.io.PrintStream.print(int)
+return
+}
+}

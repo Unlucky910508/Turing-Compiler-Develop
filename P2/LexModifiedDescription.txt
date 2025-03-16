@@ -1,0 +1,18 @@
+1.  add return(t) at token(t)         
+                     tokenID(t,i)     
+                     tokenInteger(t,i)
+                     tokenFloat(t,f)  
+                     tokenString(t,s) 
+2.  #include "table.h"  
+    #include "y.tab.h"
+    #include <stdbool.h>
+
+3.  Comment the main function
+
+4.  use yylval.ival to store integer value
+    use yylval.dval to store real value
+    use yylval.sval to store string value
+    use yylval.bval to store boolean value
+    use yylval.id_name to store ID value
+
+5. delete old symbolTable in lex, include new symbolTable in table.h
